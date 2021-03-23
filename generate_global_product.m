@@ -55,10 +55,15 @@ function [GP_OUT, R] = generate_global_product(path_str, field_product, interpol
     % Global reference
     R = makerefmat(GLON_MIN, GLAT_MAX, DX, DY);
         
-    LON_VEC = GLON_MIN:DX:GLON_MAX+DX-eps; % we add (DX-eps) to introduce an additional column in case we reach a position close to GLON_MAX using a DX step
+    %LON_VEC = GLON_MIN:DX:GLON_MAX+DX-eps; % we add (DX-eps) to introduce an additional column in case we reach a position close to GLON_MAX using a DX step
+    %num_cols = numel(LON_VEC);
+    %LAT_VEC = GLAT_MAX:DY:GLAT_MIN-DY+eps; % reverse
+    %num_rows = numel(LAT_VEC);
+    
+    LON_VEC = GLON_MIN:DX:GLON_MAX+DX; % we add DX to guarantee that GLON_MAX is always reached
     num_cols = numel(LON_VEC);
-    LAT_VEC = GLAT_MAX:DY:GLAT_MIN-DY+eps; % reverse
-    num_rows = numel(LAT_VEC);    
+    LAT_VEC = GLAT_MAX:DY:GLAT_MIN+DY; % idem (note that DY is negative and we want to reach GLAT_MIN in this case)
+    num_rows = numel(LAT_VEC);
     
     % Output joint product
     GP_OUT = single(NaN([num_rows,num_cols,num_products]));
