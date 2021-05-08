@@ -26,7 +26,8 @@ This repo contains the codes for the JSTARS paper: [Multitemporal Mosaicing for 
   volume={13},
   pages={5439--5454},
   year={2020},
-  publisher={IEEE}
+  publisher={IEEE},
+  doi={10.1109/JSTARS.2020.3023593}
 }
 ```
 
