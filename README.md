@@ -1,0 +1,1 @@
+Ibañez, D., Fernandez-Beltran, R., Sotoca, J. M., Mollineda, R. A., Moreno, J., & Pla, F. (2020). Multitemporal Mosaicing for Sentinel-3/FLEX Derived Level-2 Product Composites. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 13, 5439-5454.
