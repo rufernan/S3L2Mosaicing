@@ -20,7 +20,7 @@ This repo contains the codes for the JSTARS paper: [Multitemporal Mosaicing for 
 
 ```
 @article{ibanez2020multitemporal,
-  title={Multitemporal Mosaicing for Sentinel-3/FLEX Derived Level-2 Product Composites},
+  title={{Multitemporal Mosaicing for Sentinel-3/FLEX Derived Level-2 Product Composites}},
   author={Iba{\~n}ez, Damian and Fernandez-Beltran, Ruben and Sotoca, Jos{\'e} Mart{\'\i}nez and Mollineda, Ram{\'o}n A and Moreno, Jos{\'e} and Pla, Filiberto},
   journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
   volume={13},
